@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 14. Tubo fluorescente. Simulación</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Instalaciones eléctricas interiores</h1>
+        <p>Práctica 14. Tubo fluorescente. Simulación</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Práctica 14 (Tubo fluorescente)</a></li>
+            <li><a href="rubrica_14.html">Rúbrica evaluación</a></li>
+            <li><a href="esquema_14.html">Esquema y montaje</a></li>
+            <li class="active"><a href="simulacion_14.html">Simulación</a></li>
+            <li><a href="presupuesto.html">Presupuesto</a></li>
+            <li><a href="glosario.html">Glosario</a></li>
+            <li><a href="prl.html">Seguridad y PRL</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <h2>14.- Tubo fluorescente: simulación del encendido</h2>
+
+        <div class="section">
+            <h3 class="section-header">1. Prueba interactiva del encendido</h3>
+            <p>Cierra el interruptor y observa las etapas del encendido: el cebador se cierra, los filamentos se calientan y, al abrirse el cebador, el tubo arranca. Prueba también a <strong>retirar el cebador</strong> antes y después del arranque. No sustituye a la prueba en el taller.</p>
+            <div class="simboard">
+                <svg viewBox="0 0 420 220" role="img" aria-label="Modelo interactivo del encendido de un tubo fluorescente">
+                    <text x="10" y="196" fill="#fbbf24" font-size="11" font-weight="bold">F</text>
+                    <text x="10" y="30" fill="#7dd3fc" font-size="11" font-weight="bold">N</text>
+                    <path d="M25 190 H60" stroke="#fbbf24" stroke-width="4" fill="none" stroke-linecap="round"/>
+                    <circle cx="60" cy="190" r="4" fill="#fbbf24"/><circle cx="100" cy="190" r="4" fill="#fbbf24"/>
+                    <path id="wI" d="M60 190 L96 172" stroke="#fbbf24" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <text x="80" y="210" text-anchor="middle" fill="#e2e8f0" font-size="10">I</text>
+                    <path id="w1" d="M100 190 H150" stroke="#c4b5fd" stroke-width="4" fill="none"/>
+                    <rect id="reac" x="150" y="180" width="70" height="20" rx="3" fill="#334e68" stroke="#fcd34d" stroke-width="2"/>
+                    <text x="185" y="172" text-anchor="middle" fill="#fcd34d" font-size="10">R</text>
+                    <path id="w2" d="M220 190 H290 V170" stroke="#c4b5fd" stroke-width="4" fill="none" stroke-linejoin="round"/>
+                    <rect id="tubo" x="278" y="50" width="24" height="120" rx="5" fill="#334e68" stroke="#b3c7d5" stroke-width="2"/>
+                    <path id="f1" d="M282 166 q8 -10 16 0" fill="none" stroke="#8ba4b5" stroke-width="2.5"/>
+                    <path id="f2" d="M282 54 q8 10 16 0" fill="none" stroke="#8ba4b5" stroke-width="2.5"/>
+                    <text x="266" y="115" text-anchor="end" fill="#e2e8f0" font-size="10">T</text>
+                    <path id="c1" d="M298 170 V200 H370 V132" stroke="#c4b5fd" stroke-width="3" fill="none" stroke-linejoin="round"/>
+                    <path id="c2" d="M298 50 V30 H370 V88" stroke="#c4b5fd" stroke-width="3" fill="none" stroke-linejoin="round"/>
+                    <g id="ceb"><circle id="cebc" cx="370" cy="110" r="22" fill="#334e68" stroke="#c4b5fd" stroke-width="2"/>
+                    <text x="370" y="115" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="700">C</text></g>
+                    <path d="M282 50 V18 H25 V26" stroke="#7dd3fc" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div id="simstate" style="font-weight:bold;margin:8px"></div>
+                <div id="simdet" style="font-size:0.9em;margin-bottom:8px;color:#d1e5ef;min-height:1.2em"></div>
+                <button id="bI">Cerrar I</button>
+                <button id="bC">Retirar cebador</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">2. Observaciones en el taller</h3>
+            <ol>
+                <li>Al cerrar I, observa la luz del cebador y el tiempo que tarda en arrancar el tubo.</li>
+                <li>Con el tubo encendido, y con autorización del docente, retira el cebador: el tubo sigue encendido.</li>
+                <li>Apaga, retira el cebador y vuelve a encender: el tubo no arranca.</li>
+                <li>Anota los resultados en la hoja de registro.</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">3. Averías frecuentes</h3>
+            <table>
+                <thead><tr><th>Síntoma</th><th>Causa probable</th></tr></thead>
+                <tbody>
+                    <tr><td>El tubo no arranca y el cebador no se ilumina</td><td>Falta de tensión, cebador defectuoso o mal colocado, filamento cortado.</td></tr>
+                    <tr><td>Los extremos del tubo quedan iluminados pero no arranca</td><td>Cebador con el contacto pegado (en cortocircuito).</td></tr>
+                    <tr><td>El tubo parpadea continuamente</td><td>Cebador o tubo agotados.</td></tr>
+                    <tr><td>Extremos del tubo ennegrecidos</td><td>Tubo al final de su vida útil.</td></tr>
+                    <tr><td>La reactancia se calienta en exceso o zumba mucho</td><td>Reactancia defectuosa o de potencia distinta a la del tubo.</td></tr>
+                    <tr><td>Salta la protección al cerrar I</td><td>Reactancia puenteada o error de conexión: cortocircuito entre fase y neutro.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">4. Guion recomendado para el vídeo</h3>
+            <ol>
+                <li>Presentación del reto y de los elementos de la luminaria.</li>
+                <li>Canalización y conductores de cada tramo.</li>
+                <li>Conexionado interno: reactancia, portalámparas y cebador.</li>
+                <li>Verificación con el polímetro sin tensión.</li>
+                <li>Prueba autorizada: arranque del tubo y medidas de tensión e intensidad.</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CFGM Instalaciones Eléctricas y Automáticas · Módulo 0235 Instalaciones eléctricas interiores</p>
+    </footer>
+<script>
+var iOn = false, ceb = true, estado = 'apagado', t1 = null;
+var Y = '#fbbf24', V = '#c4b5fd';
+function set(id, attr, val){ document.getElementById(id).setAttribute(attr, val); }
+function draw(){
+  var corriente = iOn && (estado === 'precalentando' || estado === 'encendido');
+  set('wI', 'd', iOn ? 'M60 190 L100 190' : 'M60 190 L96 172');
+  ['w1', 'w2'].forEach(function(id){ set(id, 'stroke', corriente ? Y : V); });
+  set('reac', 'fill', corriente ? '#78350f' : '#334e68');
+  var pre = estado === 'precalentando';
+  ['c1', 'c2'].forEach(function(id){ set(id, 'stroke', pre ? Y : V); });
+  set('f1', 'stroke', pre || estado === 'encendido' ? '#fb923c' : '#8ba4b5');
+  set('f2', 'stroke', pre || estado === 'encendido' ? '#fb923c' : '#8ba4b5');
+  set('tubo', 'fill', estado === 'encendido' ? '#f0f9ff' : (pre ? '#475569' : '#334e68'));
+  set('cebc', 'fill', pre ? '#f9a8d4' : '#334e68');
+  document.getElementById('ceb').style.opacity = ceb ? 1 : 0.15;
+  var txt = { apagado: 'TUBO APAGADO', precalentando: 'CEBADOR CERRADO · PRECALENTANDO FILAMENTOS', encendido: 'TUBO ENCENDIDO', noarranca: 'EL TUBO NO ARRANCA' }[estado];
+  var det = { apagado: iOn ? '' : 'Interruptor abierto.',
+              precalentando: 'Circula corriente por la reactancia, los filamentos y el cebador.',
+              encendido: 'La reactancia limita la corriente; el cebador ya no interviene' + (ceb ? '.' : ' (puede retirarse sin que se apague el tubo).'),
+              noarranca: 'Sin cebador no se precalientan los filamentos ni se produce la sobretensión de arranque.' }[estado];
+  document.getElementById('simstate').textContent = txt;
+  document.getElementById('simdet').textContent = det;
+  var bI = document.getElementById('bI'); bI.textContent = iOn ? 'Abrir I' : 'Cerrar I'; bI.classList.toggle('on', iOn);
+  document.getElementById('bC').textContent = ceb ? 'Retirar cebador' : 'Colocar cebador';
+}
+function arrancar(){
+  clearTimeout(t1);
+  if (!iOn) { estado = 'apagado'; draw(); return; }
+  if (!ceb) { estado = 'noarranca'; draw(); return; }
+  estado = 'precalentando'; draw();
+  t1 = setTimeout(function(){ if (iOn && ceb && estado === 'precalentando') { estado = 'encendido'; draw(); } }, 1800);
+}
+document.getElementById('bI').addEventListener('click', function(){ iOn = !iOn; arrancar(); });
+document.getElementById('bC').addEventListener('click', function(){
+  ceb = !ceb;
+  if (estado === 'encendido') { draw(); return; }      // con el tubo encendido, el cebador no influye
+  arrancar();
+});
+draw();
+</script>
+    <button type="button" class="btn-imprimir" onclick="window.print()" aria-label="Imprimir esta página">&#128424; Imprimir</button>
+</body>
+</html>

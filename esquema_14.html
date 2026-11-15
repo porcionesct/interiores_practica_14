@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 14. Tubo fluorescente. Esquema y montaje</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Instalaciones eléctricas interiores</h1>
+        <p>Práctica 14. Tubo fluorescente. Esquema y montaje</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Práctica 14 (Tubo fluorescente)</a></li>
+            <li><a href="rubrica_14.html">Rúbrica evaluación</a></li>
+            <li class="active"><a href="esquema_14.html">Esquema y montaje</a></li>
+            <li><a href="simulacion_14.html">Simulación</a></li>
+            <li><a href="presupuesto.html">Presupuesto</a></li>
+            <li><a href="glosario.html">Glosario</a></li>
+            <li><a href="prl.html">Seguridad y PRL</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <h2>14.- Tubo fluorescente: esquema y montaje</h2>
+
+        <div class="section">
+            <h3 class="section-header">1. Esquema eléctrico</h3>
+            <p>La fase pasa por el interruptor I y por la <strong>reactancia R</strong> (en serie) hasta el primer filamento del <strong>tubo T</strong>. El <strong>cebador C</strong> une los otros bornes de los dos filamentos (en paralelo con el tubo). El segundo filamento va al <strong>neutro</strong>.</p>
+            <div class="automata-image">
+            <svg viewBox="0 0 460 260" style="width:100%;max-width:600px;background:#fff;border:1px solid #ccc;border-radius:6px" role="img" aria-label="Esquema de tubo fluorescente con reactancia y cebador">
+                <text x="70" y="16" fill="#607586" font-size="10">230 V · 50 Hz</text>
+                <path d="M30 210 V230 H70" fill="none" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+                <text x="14" y="214" fill="#b45309" font-size="12" font-weight="700">F</text>
+                <circle cx="70" cy="230" r="4" fill="#d97706"/><circle cx="110" cy="230" r="4" fill="#d97706"/>
+                <path d="M70 230 L106 212" stroke="#d97706" stroke-width="3" fill="none"/>
+                <text x="90" y="252" text-anchor="middle" font-size="11" fill="#81540a" font-weight="700">I</text>
+                <path d="M110 230 H180" fill="none" stroke="#d97706" stroke-width="4"/>
+                <rect x="180" y="220" width="70" height="20" rx="3" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+                <path d="M184 244 H246" stroke="#b45309" stroke-width="2"/>
+                <text x="215" y="212" text-anchor="middle" font-size="11" fill="#81540a" font-weight="700">R (reactancia)</text>
+                <path d="M250 230 H330 V200" fill="none" stroke="#d97706" stroke-width="4" stroke-linejoin="round"/>
+                <rect x="318" y="70" width="24" height="130" rx="4" fill="#ecfeff" stroke="#0e7490" stroke-width="2"/>
+                <path d="M322 196 q8 -10 16 0" fill="none" stroke="#0e7490" stroke-width="2"/>
+                <path d="M322 74 q8 10 16 0" fill="none" stroke="#0e7490" stroke-width="2"/>
+                <text x="300" y="140" text-anchor="end" font-size="12" fill="#0e7490" font-weight="700">T (tubo)</text>
+                <path d="M338 200 V230 H420 V160" fill="none" stroke="#7c3aed" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M338 70 V40 H420 V110" fill="none" stroke="#7c3aed" stroke-width="3" stroke-linejoin="round"/>
+                <circle cx="420" cy="135" r="22" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+                <text x="420" y="140" text-anchor="middle" font-size="13" fill="#6d28d9" font-weight="700">C</text>
+                <text x="392" y="106" font-size="10" fill="#6d28d9" text-anchor="end">cebador</text>
+                <path d="M322 70 V24 H30 V40" fill="none" stroke="#0284c7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="14" y="44" fill="#0284c7" font-size="12" font-weight="700">N</text>
+                <path d="M30 40 V200" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <circle cx="30" cy="120" r="16" fill="#fff" stroke="#607586" stroke-width="2"/>
+                <path d="M22 120 q4 -8 8 0 q4 8 8 0" fill="none" stroke="#607586" stroke-width="1.5"/>
+                <text x="300" y="254" text-anchor="middle" font-size="10" fill="#607586">Esquema conceptual</text>
+            </svg>
+            </div>
+            <div class="aviso">La representación es didáctica y simplificada. En el montaje real se incorporarán las protecciones, canalizaciones y conductor de protección que correspondan. El chasis metálico de la luminaria debe conectarse al conductor de protección.</div>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">2. Plano de montaje en el tablero</h3>
+            <p><strong>Plano de ejecución de la práctica.</strong> Incluye el esquema de montaje y el esquema eléctrico: caja de registro con regleta F · N · T, la caja de mecanismo del interruptor y la luminaria con la reactancia, el tubo y el cebador. Haz clic sobre la imagen para ampliarla.</p>
+            <div class="automata-image">
+                <img id="myImg" class="plano-ancho" src="images_14/circuito_14.png" alt="Plano de montaje: tubo fluorescente con reactancia y cebador" style="cursor: pointer;">
+            </div>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">3. Distribución en el panel</h3>
+            <p>Según el plano de la práctica: el <strong>interruptor I</strong> a la izquierda, la <strong>caja de registro</strong> a su derecha con la regleta F · N · T, y la <strong>luminaria</strong> por debajo, con la <strong>reactancia</strong> en la parte superior izquierda, el <strong>tubo</strong> entre los dos portalámparas y el <strong>portacebador</strong> abajo a la izquierda. El interruptor y la luminaria se unen a la caja con tubo.</p>
+            <table>
+                <thead><tr><th>Tramo</th><th>Conductores</th><th>Función</th></tr></thead>
+                <tbody>
+                    <tr><td>Caja de registro → Interruptor I (tubo)</td><td><span style="display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle;background:#d97706"></span>Fase · <span style="display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle;background:#d97706"></span>Retorno</td><td>La fase llega a I y vuelve como retorno.</td></tr>
+                    <tr><td>Caja de registro → Luminaria (tubo)</td><td><span style="display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle;background:#d97706"></span>Retorno · <span style="display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle;background:#0284c7"></span>Neutro · <span style="display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle;background:#16a34a"></span>Protección</td><td>Alimentan el equipo y conectan el chasis a tierra.</td></tr>
+                    <tr><td>Interior luminaria</td><td><span style="display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle;background:#d97706"></span>Retorno → Reactancia → Portalámparas 1</td><td>La reactancia queda en serie con el tubo.</td></tr>
+                    <tr><td>Interior luminaria</td><td><span style="display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle;background:#7c3aed"></span>Portalámparas 1 → Cebador → Portalámparas 2</td><td>El cebador une los dos filamentos.</td></tr>
+                    <tr><td>Interior luminaria</td><td><span style="display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle;background:#0284c7"></span>Portalámparas 2 → Neutro</td><td>Cierra el circuito.</td></tr>
+                </tbody>
+            </table>
+            <p style="font-size:0.9em;color:#666">Cada portalámparas tiene dos bornes (uno por cada patilla del filamento). En cada extremo, un borne recibe la alimentación (reactancia o neutro) y el otro va al cebador. Consulta el esquema impreso en la reactancia antes de conectar.</p>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">4. Proceso de encendido</h3>
+            <table>
+                <thead><tr><th>Etapa</th><th>Qué ocurre</th><th>Qué se observa</th></tr></thead>
+                <tbody>
+                    <tr><td>1. Cierre de I</td><td>El cebador recibe tensión; su lámina bimetálica se calienta y cierra el contacto.</td><td>Luz rosada en el cebador.</td></tr>
+                    <tr><td>2. Precalentamiento</td><td>Circula corriente por reactancia, filamentos y cebador: los filamentos se calientan.</td><td>Extremos del tubo ligeramente iluminados.</td></tr>
+                    <tr><td>3. Apertura del cebador</td><td>El bimetal se enfría y abre el circuito; la reactancia genera una sobretensión.</td><td>Destello y arranque del tubo.</td></tr>
+                    <tr><td>4. Régimen</td><td>El tubo conduce; la reactancia limita la corriente y el cebador queda inactivo.</td><td>Luz estable en todo el tubo.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">5. Verificación y medidas eléctricas</h3>
+            <p><strong>Verificación (sin tensión).</strong> Con el polímetro en resistencia:</p>
+            <ul>
+                <li>Continuidad de cada filamento (entre las dos patillas de un extremo del tubo): resistencia de pocos ohmios.</li>
+                <li>Continuidad de la reactancia: resistencia de algunas decenas de ohmios (según modelo).</li>
+                <li>Entre fase y neutro de la caja de registro, con <strong>I abierto</strong>: circuito abierto («OL»). Con <strong>I cerrado</strong> y el cebador retirado: circuito abierto. El valor cambia al accionar I.</li>
+                <li>En ninguna situación debe medirse 0 Ω entre fase y neutro.</li>
+            </ul>
+            <p><strong>Medidas eléctricas (con tensión, autorizadas por el docente).</strong> Registra en la hoja de medidas:</p>
+            <table>
+                <thead><tr><th>Medida</th><th>Cómo se realiza</th><th>Valor orientativo (tubo de 36 W)</th></tr></thead>
+                <tbody>
+                    <tr><td>Tensión de alimentación</td><td>En paralelo, entre retorno y neutro en la luminaria.</td><td>≈ 230 V</td></tr>
+                    <tr><td>Tensión en el tubo encendido</td><td>En paralelo, entre los extremos del tubo.</td><td>≈ 100 V</td></tr>
+                    <tr><td>Tensión en la reactancia</td><td>En paralelo, en sus bornes.</td><td>≈ 190–200 V (no se suman aritméticamente con la del tubo)</td></tr>
+                    <tr><td>Intensidad</td><td>En serie con la fase, o con pinza amperimétrica.</td><td>≈ 0,4 A</td></tr>
+                    <tr><td>Factor de potencia (cálculo)</td><td>cos φ = P / (U · I), con P ≈ potencia del tubo + pérdidas de la reactancia.</td><td>≈ 0,5 (sin condensador)</td></tr>
+                </tbody>
+            </table>
+            <p style="font-size:0.9em;color:#666">Los valores dependen del tubo y de la reactancia utilizados; consulta sus placas de características.</p>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">6. Secuencia de montaje</h3>
+            <ol>
+                <li><strong>Interpretar:</strong> localiza en el plano la caja de registro, el interruptor y los elementos de la luminaria, y sigue el recorrido de la corriente en el esquema.</li>
+                <li><strong>Canalizar:</strong> fija las cajas y la luminaria; coloca los tubos y las grapas.</li>
+                <li><strong>Montar sin tensión:</strong> fase a I; retorno a la luminaria; reactancia entre el retorno y el primer portalámparas; cebador entre los dos portalámparas; segundo portalámparas al neutro; chasis a tierra.</li>
+                <li><strong>Verificar:</strong> comprueba con el polímetro filamentos, reactancia y la resistencia del circuito con I abierto y cerrado, siempre sin tensión.</li>
+                <li><strong>Probar y medir:</strong> coloca el tubo y el cebador, solicita la revisión del docente, observa el arranque y realiza las medidas de tensión e intensidad.</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">7. Lista de comprobación del montaje</h3>
+            <div class="checklist">
+                <label><input type="checkbox"> He interpretado el esquema eléctrico y el de montaje antes de montar.</label>
+                <label><input type="checkbox"> He fijado la caja de registro, la caja de mecanismo y la luminaria con linealidad.</label>
+                <label><input type="checkbox"> He colocado los tubos y las grapas a distancia regular.</label>
+                <label><input type="checkbox"> He realizado el montaje con el circuito sin tensión.</label>
+                <label><input type="checkbox"> He conectado la fase al interruptor y el retorno a la entrada de la luminaria.</label>
+                <label><input type="checkbox"> He conectado la reactancia en serie entre el retorno y el primer filamento.</label>
+                <label><input type="checkbox"> He conectado el cebador entre los dos filamentos.</label>
+                <label><input type="checkbox"> He conectado el segundo filamento al neutro.</label>
+                <label><input type="checkbox"> He conectado el chasis de la luminaria al conductor de protección.</label>
+                <label><input type="checkbox"> Ningún conductor queda sin aislante fuera de los bornes.</label>
+                <label><input type="checkbox"> He verificado con el polímetro la continuidad de filamentos y reactancia.</label>
+                <label><input type="checkbox"> He verificado la resistencia del circuito con I abierto y cerrado.</label>
+                <label><input type="checkbox"> He solicitado revisión docente antes de energizar.</label>
+                <label><input type="checkbox"> He comprobado el arranque y registrado las medidas de tensión e intensidad.</label>
+            </div>
+            <p id="checkcount" style="color:#666;font-size:0.9em">0 de 14 tareas completadas</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CFGM Instalaciones Eléctricas y Automáticas · Módulo 0235 Instalaciones eléctricas interiores</p>
+    </footer>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<script>
+// Ventana modal para ampliar el plano
+var modal = document.getElementById("myModal");
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){ modal.style.display = "block"; modalImg.src = this.src; captionText.innerHTML = this.alt; }
+document.getElementsByClassName("close")[0].onclick = function(){ modal.style.display = "none"; }
+window.onclick = function(event){ if (event.target == modal) { modal.style.display = "none"; } }
+
+// Lista de comprobación del montaje
+var checks = document.querySelectorAll('.checklist input');
+checks.forEach(function(c){
+  c.addEventListener('change', function(){
+    var n = document.querySelectorAll('.checklist input:checked').length;
+    document.getElementById('checkcount').textContent = n + ' de ' + checks.length + ' tareas completadas';
+  });
+});
+</script>
+    <button type="button" class="btn-imprimir" onclick="window.print()" aria-label="Imprimir esta página">&#128424; Imprimir</button>
+</body>
+</html>
