@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 14. Tubo fluorescente. Descripción</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Instalaciones eléctricas interiores</h1>
+        <p>Práctica 14. Tubo fluorescente. Descripción</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Práctica 14 (Tubo fluorescente)</a></li>
+            <li><a href="rubrica_14.html">Rúbrica evaluación</a></li>
+            <li><a href="esquema_14.html">Esquema y montaje</a></li>
+            <li><a href="simulacion_14.html">Simulación</a></li>
+            <li><a href="presupuesto.html">Presupuesto</a></li>
+            <li><a href="glosario.html">Glosario</a></li>
+            <li><a href="prl.html">Seguridad y PRL</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <h2>14.- Tubo fluorescente con reactancia y cebador accionado por interruptor</h2>
+
+        <div class="section">
+            <h3 class="section-header">1. Descripción de la práctica</h3>
+            <p>En un taller se desea instalar una <strong>luminaria fluorescente</strong> gobernada por un interruptor. La luminaria lleva un <strong>tubo fluorescente</strong> (T), una <strong>reactancia</strong> electromagnética (R) y un <strong>cebador</strong> (C), que deben conectarse correctamente para que el tubo arranque.
+Como técnico/a en formación, deberás interpretar el plano, ejecutar la canalización, cablear el interruptor y el equipo de la luminaria, verificar el circuito, realizar las medidas eléctricas y comprobar su funcionamiento.</p>
+
+            <h3 class="section-header">2. Requisitos funcionales</h3>
+            <p><strong>2.1.- Alimentación:</strong> El circuito se alimenta a 230 V / 50 Hz desde la caja de registro, donde se reparten fase (F), neutro (N) y protección (T) mediante regleta.</p>
+            <p><strong>2.2.- Interruptor I:</strong> Abre o cierra la <strong>fase</strong> que alimenta la luminaria.</p>
+            <p><strong>2.3.- Conexión del equipo:</strong> El retorno del interruptor pasa por la <strong>reactancia</strong> (en serie) y llega a un extremo del tubo (primer filamento). Los otros bornes de los dos filamentos se unen a través del <strong>cebador</strong> (en paralelo con el tubo). El otro extremo del tubo (segundo filamento) va al <strong>neutro</strong>.</p>
+            <p><strong>2.4.- Funcionamiento:</strong> Al cerrar I, el cebador se cierra y circula corriente por los filamentos, que se calientan. Al abrirse el cebador, la reactancia produce una <strong>sobretensión</strong> que enciende el tubo. Después, la reactancia <strong>limita la corriente</strong> y el cebador queda fuera de servicio.</p>
+            <p><strong>2.5.- Conductor de protección:</strong> La luminaria es metálica: su chasis debe conectarse al <strong>conductor de protección</strong> (verde-amarillo).</p>
+
+            <h3 class="section-header">3. Material suministrado / recursos</h3>
+            <ul>
+                <li>Panel didáctico de montaje.</li>
+                <li>1 caja de registro con regleta (F, N, T).</li>
+                <li>1 caja de mecanismo con interruptor unipolar (I).</li>
+                <li>1 luminaria fluorescente con reactancia electromagnética, portacebador, cebador, dos portalámparas (zócalos G13) y tubo fluorescente.</li>
+                <li>Tubo de PVC de 16 mm, grapas y curvas.</li>
+                <li>Conductores H07V-K de 1,5 mm² en colores normalizados (marrón/negro/gris fase y retorno; azul neutro; verde-amarillo protección).</li>
+                <li>Herramientas aisladas, pelacables, polímetro (resistencia, tensión e intensidad), pinza amperimétrica si está disponible.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">4. Justificación</h3>
+            <p>El tubo fluorescente con equipo electromagnético es un receptor habitual en talleres, garajes e instalaciones comerciales, y su mantenimiento (cambio de tubo, cebador o reactancia) es una tarea frecuente del instalador. Esta práctica permite comprender:</p>
+            <ul class="list-indented">
+                <li>La función de la <strong>reactancia</strong> (arranque y limitación de corriente) y del <strong>cebador</strong> (precalentamiento de los filamentos).</li>
+                <li>El conexionado interno de una luminaria y su conexión a tierra.</li>
+                <li>La verificación del circuito con el polímetro: continuidad de filamentos, reactancia y cebador.</li>
+                <li>Las medidas de tensión e intensidad y el bajo <strong>factor de potencia</strong> de los equipos inductivos.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">5. Contexto</h3>
+            <table>
+                <thead><tr><th>Aspecto</th><th>Detalle</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Público Objetivo</strong></td><td>1.º CFGM Instalaciones Eléctricas y Automáticas.</td></tr>
+                    <tr><td><strong>Módulo Profesional</strong></td><td>0235. Instalaciones eléctricas interiores.</td></tr>
+                    <tr><td><strong>Duración Estimada</strong></td><td>6–8 horas (teoría + montaje + verificación y medidas).</td></tr>
+                    <tr><td><strong>Espacio y Recursos</strong></td><td>Aula-taller con paneles de montaje, luminarias didácticas y polímetros.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">6. Resultado de Aprendizaje y Criterios de Evaluación</h3>
+            <p><strong>RA1.</strong> Monta la instalación eléctrica de un local de vivienda, analizando el funcionamiento de sus elementos y aplicando la normativa.</p>
+            <table>
+                <thead><tr><th>Código</th><th>Criterio de Evaluación (CE)</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>CE 1.1</strong></td><td>Realiza las medidas eléctricas del circuito (resistencia, tensión e intensidad).</td></tr>
+                    <tr><td><strong>CE 1.4</strong></td><td>Monta los circuitos y comprueba su correcto funcionamiento.</td></tr>
+                    <tr><td><strong>CE 1.5</strong></td><td>Ejecuta las canalizaciones, cajas de registro y cajas de mecanismos con calidad.</td></tr>
+                    <tr><td><strong>CE 1.9</strong></td><td>Verifica el circuito midiendo la resistencia al accionar los mecanismos (abierto y cerrado).</td></tr>
+                </tbody>
+            </table>
+            <p>Referencia curricular: <a href="https://www.juntadeandalucia.es/boja/2009/164/1" target="_blank" rel="noopener noreferrer">Orden de 7 de julio de 2009 (BOJA) ↗</a>. Adaptar a la programación del departamento y a la normativa vigente.</p>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">7. Metodología y Métodos de Enseñanza</h3>
+            <p><strong>Metodología:</strong> Activa, práctica y competencial, basada en Aprendizaje Basado en Retos: interpretar, montar, verificar y medir.</p>
+            <ul class="list-indented">
+                <li>Demostración guiada del arranque del tubo y de la identificación de bornes de la reactancia y los filamentos.</li>
+                <li>Trabajo manipulativo (canalización, cableado del interruptor y del equipo de la luminaria).</li>
+                <li>Simulación del proceso de encendido para comprender el papel del cebador y la reactancia.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">8. Actividades de Aprendizaje</h3>
+            <table>
+                <thead><tr><th>Fase</th><th>Actividad</th><th>CE</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Teoría</strong> (60 min)</td><td>Lámpara fluorescente: tubo, filamentos, reactancia y cebador. Proceso de encendido. Lectura del esquema eléctrico y de montaje.</td><td>CE 1.4</td></tr>
+                    <tr><td><strong>Canalización</strong> (60 min)</td><td>Caja de registro, caja de mecanismo y fijación de la luminaria; tubos y grapas.</td><td>CE 1.5</td></tr>
+                    <tr><td><strong>Cableado y conexión</strong> (90 min)</td><td>Conexión del interruptor y del equipo interno de la luminaria <strong>sin tensión</strong>; conexión a tierra del chasis.</td><td>CE 1.4</td></tr>
+                    <tr><td><strong>Verificación</strong> (45 min)</td><td>Continuidad de filamentos y reactancia; resistencia del circuito con I abierto y cerrado.</td><td>CE 1.9</td></tr>
+                    <tr><td><strong>Prueba y medidas</strong> (60 min)</td><td>Revisión del docente, puesta en tensión autorizada, observación del arranque y medidas de tensión e intensidad.</td><td>CE 1.1, 1.4</td></tr>
+                    <tr><td><strong>Final</strong> (30 min)</td><td>Registro de medidas y grabación del vídeo del montaje.</td><td>CE 1.1, 1.4</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">9. Agrupamientos</h3>
+            <ul class="list-indented">
+                <li><strong>Individual:</strong> Hoja de registro de medidas.</li>
+                <li><strong>Parejas:</strong> Montaje físico (fomenta la cooperación y la revisión mutua).</li>
+                <li><strong>Gran Grupo:</strong> Análisis del arranque y de averías típicas (tubo que parpadea, extremos encendidos, no arranca).</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">10. Atención a la Diversidad e Inclusión</h3>
+            <ul class="list-indented">
+                <li>Uso de <strong>material visual ampliado</strong> y esquemas en colores.</li>
+                <li>Uso de la <strong>simulación interactiva</strong> para el alumnado con dificultades motrices.</li>
+                <li><strong>Andamiaje progresivo</strong>:
+                    <ul>
+                        <li>Nivel Básico: Montaje y prueba de funcionamiento.</li>
+                        <li>Nivel Avanzado: Medida de tensión en bornes de la reactancia y del tubo, cálculo del factor de potencia y propuesta de un condensador de compensación.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">11. Evaluación</h3>
+            <h4>Criterios de Evaluación:</h4>
+            <ol>
+                <li>Funcionamiento del circuito (CE 1.4).</li>
+                <li>Calidad de las canalizaciones (CE 1.5).</li>
+                <li>Verificación del circuito con el polímetro (CE 1.9).</li>
+                <li>Medidas eléctricas: resistencia, tensión e intensidad (CE 1.1).</li>
+            </ol>
+            <h4>Instrumentos / Técnicas:</h4>
+            <ul class="list-indented">
+                <li>Rúbrica de desempeño práctico.</li>
+                <li>Lista de cotejo (checklist) para el montaje.</li>
+                <li>Hoja de registro de medidas.</li>
+                <li>Observación directa del trabajo en el taller.</li>
+                <li>Autoevaluación: ¿qué ocurre si se retira el cebador con el tubo ya encendido? ¿Y antes de encender?</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">12. Recursos y Materiales</h3>
+            <ul class="list-indented">
+                <li><strong>Hardware:</strong> Panel didáctico, caja de registro con regleta, caja de mecanismo, interruptor unipolar, luminaria fluorescente con reactancia, cebador y tubo, tubo PVC, conductores H07V-K 1,5 mm², polímetro.</li>
+                <li><strong>Software:</strong> Simulación interactiva de la práctica.</li>
+                <li><strong>Documentación:</strong> Esquema eléctrico y esquema de montaje, hoja de características de la reactancia, REBT, ITC-BT-19, ITC-BT-21 e ITC-BT-44 (receptores para alumbrado).</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">13. Seguridad y Normativa</h3>
+            <ul class="list-indented">
+                <li>Montaje, modificaciones y medidas de resistencia <strong>siempre sin tensión</strong>.</li>
+                <li>Aplicación de las <strong>cinco reglas de oro</strong> antes de cualquier manipulación.</li>
+                <li>Prohibido energizar el panel sin la <strong>revisión del docente</strong>.</li>
+                <li>Conectar el <strong>chasis metálico de la luminaria</strong> al conductor de protección.</li>
+                <li>Manipular el tubo con cuidado: es de <strong>vidrio</strong> y contiene una pequeña cantidad de <strong>mercurio</strong>. Si se rompe, ventilar la zona, no tocar los restos con las manos y depositarlos en el punto de recogida de residuos. Los tubos usados se llevan a un punto limpio.</li>
+                <li>Las medidas de tensión e intensidad se realizan con autorización y supervisión del docente; la intensidad, siempre en serie o con pinza amperimétrica.</li>
+                <li>Normativa: REBT, ITC-BT-19 (colores), ITC-BT-21 (tubos) e ITC-BT-44 (receptores para alumbrado).</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">14. Entregables</h3>
+            <h4>Obligatorio</h4>
+            <ul class="list-indented">
+                <li>Realiza el <strong>vídeo del montaje</strong> en el taller (3–5 min), mostrando el arranque del tubo.</li>
+                <li>Entrega la <strong>hoja de registro de medidas</strong> (verificación y medidas eléctricas).</li>
+            </ul>
+            <h4>Mejora del circuito (trabajo adicional)</h4>
+            <ol>
+                <li>Calcular el <strong>factor de potencia</strong> de la luminaria a partir de las medidas (P, U, I) y proponer la capacidad del condensador de compensación en paralelo.</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CFGM Instalaciones Eléctricas y Automáticas · Módulo 0235 Instalaciones eléctricas interiores</p>
+    </footer>
+
+    <button type="button" class="btn-imprimir" onclick="window.print()" aria-label="Imprimir esta página">&#128424; Imprimir</button>
+</body>
+</html>
